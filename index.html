@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="application.js"></script>
+    <link href="application.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>Text Analysis Application</title>
+  </head>
+
+
+<div class="container" id="nav">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Text Analysis Application</h3>
+      </div>
+
+  <body>
+
+  <div class='row'>
+  	<div class="jumbotron">
+        <h1>What is this?</h1>
+        <p class="lead">This application allows you to perform sentiment analysis from review sites</p>
+        <p><a class="btn btn-lg btn-success example_button" href="#" role="button">Get Example Data</a></p>
+      </div>
+
+      <div class="extraData">
+      	<table class='table-striped table-condensed sampleDataTable' id='fullRow'>
+			<th class='col-sm-6'>Youtube Video</th>
+			<th class='col-sm-6'>Comments</th>
+		</table>
+      </div>
+
+  </div>
+
+	<div class="container">
+	  <h2>Try me out now!</h2>
+
+	  <form class="form-horizontal" id="f1" role="form">
+	    <div class="form-group">
+	      <label class="control-label col-sm-2" for="email">Enter a Text here</label>
+	      <div class="col-sm-10">
+	        <input type="text" class="form-control" id="input1" placeholder="Enter text here">
+	      </div>
+	    </div>
+
+	    <div class="form-group">        
+	      <div class="col-sm-offset-2 col-sm-10">
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </div>
+	    </div>
+	  </form>
+	</div>
+
+	<div class="container resultContainer">
+		<div class = "result">
+			<h2>Some Results</h2>
+		</div>
+
+		
+		<table class='table-striped table-condensed resultTable' id='fullRow'>
+			<th class='col-sm-4'>Inputed Text</th>
+			<th class='col-sm-4'>Sentiment Score</th>
+			<th class='col-sm-4'>Rating</th>
+		</table>
+		
+
+		<button type='button' class='btn btn-default' id='delete_button'>Delete Record</button>
+	</div>
+
+  </body>
